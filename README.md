@@ -3,6 +3,9 @@ Spring Boot Virtual Thread Demo
 
 Spring Boot Virtual Thread Demo with Tomcat.
 
+
+curl -s "https://get.sdkman.io" | bash
+sdk install java 21.0.4-amzn 
 * Java 21: https://jdk.java.net/21/
 * Spring Boot 3.2.0 with Tomcat 10.1.16
 
