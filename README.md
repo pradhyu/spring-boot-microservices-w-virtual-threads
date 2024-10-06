@@ -43,3 +43,9 @@ Add `@EnableAsync` on Spring Boot main class, then add `@Async` on method.
 * When virtual threads are enabled, configure Jetty to use
   them: https://github.com/spring-projects/spring-boot/issues/35703
 # spring-boot-microservices-w-virtual-threads
+
+
+
+# AB test
+pkshrestha@pk-mac ~/g/spring-boot-microservices-w-virtual-threads (main)> a
+b -n 100 -c 100 -r -v trace http://localhost:8080/

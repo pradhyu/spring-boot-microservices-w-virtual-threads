@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
+import java.util.Random;
 import java.util.concurrent.Callable;
 
 
@@ -12,9 +13,11 @@ import java.util.concurrent.Callable;
 public class PortalController {
 
     @GetMapping("/")
-    public String index() {
+    public String index() throws InterruptedException {
         sayHi("Jackie");
-        return "Hello Virtual Thread!";
+        int sleepms=new Random().nextInt(10000);
+        Thread.sleep(sleepms);
+        return "Hello Virtual Thread! " + sleepms+ "ms";
     }
 
     @GetMapping("/where-am-i")
