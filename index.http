@@ -1,4 +1,14 @@
+### random sleep
 GET http://localhost:8080
+
+###  Sleep 0.1 sec
+GET http://localhost:8080/sleep?ms=100
+
+### Sleep 5 sec
+GET http://localhost:8080/sleep?ms=5000
+
+### Sleep 20 sec
+GET http://localhost:8080/sleep?ms=20000
 
 ### Virtual Thread check
 GET http://localhost:8080/where-am-i
