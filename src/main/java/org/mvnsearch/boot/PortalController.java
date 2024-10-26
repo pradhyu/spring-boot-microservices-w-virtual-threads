@@ -27,8 +27,9 @@ public class PortalController {
     @GetMapping("/sleep")
     public String sleep(@RequestParam int ms) throws InterruptedException {
    
+        sayHi("sleep started for - " + ms + "ms");
         Thread.sleep(ms);
-        sayHi("wait sleept for - " + ms + "ms");
+        sayHi("wait slept for - " + ms + "ms");
         return "/sleep:Hello Virtual Thread! -" + ms+ "ms";
     }
 
