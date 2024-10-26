@@ -13,6 +13,9 @@ GET http://localhost:8080/sleep?ms=5000
 ### Sleep 10 sec
 GET http://localhost:8080/sleep?ms=10000
 
+### Sleep 20 sec
+GET http://localhost:8080/sleep?ms=20000
+
 ### httptrae
 http://localhost:8080/actuator/httpexchanges
 
